@@ -2923,7 +2923,12 @@ yang ingin ngebot dan ingin belajar membuat bot sendiri.
                     }
                 break
             case 'list': case 'allmenu': case 'help': case '?': {
-                anu = `┌──⭓ *Group Menu*
+                anu = ` 
+*Name = ${pushname}*
+*Jam = ${time2}*
+*Tanggal ${time3}*
+
+┌──⭓ *Group Menu*
 │
 │⭔ ${prefix}linkgroup
 │⭔ ${prefix}ephemeral [option]
