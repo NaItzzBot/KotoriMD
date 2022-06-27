@@ -53,6 +53,8 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	   
         // Variable
         var time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
+	var time2 = format('DD/MM HH:mm:ss')
+	var time3 = moment.tz('Asia/Jakarta')
 
         // Group
         const groupMetadata = m.isGroup ? await hisoka.groupMetadata(m.chat).catch(e => {}) : ''
