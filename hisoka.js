@@ -50,11 +50,6 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         const quoted = m.quoted ? m.quoted : m
         const mime = (quoted.msg || quoted).mimetype || ''
         const isMedia = /image|video|sticker|audio/.test(mime)
-	   
-        // Variable
-        var time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
-	var time2 = format('DD/MM HH:mm:ss')
-	var time3 = moment.tz('Asia/Jakarta')
 
         // Group
         const groupMetadata = m.isGroup ? await hisoka.groupMetadata(m.chat).catch(e => {}) : ''
@@ -2794,9 +2789,6 @@ let capt = `⭔ Title: ${judul}
             	anu = ` Hallo ${pushname}
             Ini adalah bot Multi Device Kotori Minami
             Gunakan Bot Dengan Sebijak Mungkin!!
-
-            Jam : ${time}
-
             _Baca ${prefix}rules Terlebih Dahulu_`
             let btn = [{
 
@@ -2924,10 +2916,6 @@ yang ingin ngebot dan ingin belajar membuat bot sendiri.
                 break
             case 'list': case 'allmenu': case 'help': case '?': {
                 anu = ` 
-*Name = ${pushname}*
-*Jam = ${time2}*
-*Tanggal ${time3}*
-
 ┌──⭓ *Group Menu*
 │
 │⭔ ${prefix}linkgroup
