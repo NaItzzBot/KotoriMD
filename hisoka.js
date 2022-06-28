@@ -2869,6 +2869,32 @@ let capt = `⭔ Title: ${judul}
                      }
 
             break
+	    case 'infobot': {
+	     let timestamp = speed()
+                let latensi = speed() - timestamp
+                neww = performance.now()
+                oldd = performance.now()
+	    var namebot = 'KotoriMD'
+	    	anu = ` [ INFOBOT ]
+⭔ Name : ${pushname}
+⭔ Name Bot : ${namebot}
+⭔ Name Owner : ${nameowner}
+⭔ Speed : ${latensi.toFixed(4)} _Second_
+⭔ Runtime : ${runtime(process.uptime())}`
+let btn = [{
+quickReplyButton: {
+displayText: 'Ping',
+id: 'ping'
+}
+}, {
+quickReplyButton: {
+displayText: 'AllMenu',
+id: 'allmenu'
+}
+}]
+ hisoka.send5ButMsg(m.chat, anu, hisoka.user.name, btn)
+ }
+ break
             case 'rules': {
                 anu = ` _Rules Bot Kotori :_
 1. Jangan Spam Bot
@@ -3163,6 +3189,7 @@ yang ingin ngebot dan ingin belajar membuat bot sendiri.
 │⭔ ${prefix}owner
 │⭔ ${prefix}menu / ${prefix}help / ${prefix}?
 │⭔ ${prefix}delete
+│⭔ ${prefix}rules
 │⭔ ${prefix}infochat
 │⭔ ${prefix}quoted
 │⭔ ${prefix}listpc
