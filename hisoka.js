@@ -2735,9 +2735,9 @@ let capt = `⭔ Title: ${judul}
             break
             case 'menu': {
             	anu = ` Hallo ${pushname}
-            Ini adalah bot Multi Device Kotori Minami
-            Gunakan Bot Dengan Sebijak Mungkin!!
-            _Baca ${prefix}rules Terlebih Dahulu_`
+Ini adalah bot Multi Device Kotori Minami
+Gunakan Bot Dengan Sebijak Mungkin!!
+_Baca ${prefix}rules Terlebih Dahulu_`
             let btn = [{
 
                                 urlButton: {
@@ -2826,9 +2826,12 @@ let capt = `⭔ Title: ${judul}
 	    	anu = ` [ INFOBOT ]
 ⭔ Name : ${pushname}
 ⭔ Name Bot : ${namebot}
+⭔ Number Bot : 082133968301
+⭔ Number Owner : 0882008356011
 ⭔ Name Owner : ${nameowner}
 ⭔ Speed : ${latensi.toFixed(4)} _Second_
-⭔ Runtime : ${runtime(process.uptime())}`
+⭔ Runtime : ${runtime(process.uptime())}
+⭔ Tanggal Rilis : 25 Juni 2022`
 let btn = [{
 quickReplyButton: {
 displayText: 'Ping',
